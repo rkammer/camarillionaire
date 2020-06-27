@@ -1,8 +1,11 @@
-from dotenv import load_dotenv
+from dotenv  import load_dotenv
 from helpers import weather as w
+from helpers import tweet   as t
 import os
 import json
 
 load_dotenv()
 
-print(w.get_formated_forecast())
+t.update_status(
+    w.get_formated_forecast()
+)
