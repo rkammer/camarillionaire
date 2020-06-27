@@ -13,7 +13,7 @@ def get_api() :
 
     return tweepy.API(auth)
 
-def update_status(message : string) :
+def update_status(message : str) :
     api = get_api()
     api.update_status(
         status = message,
