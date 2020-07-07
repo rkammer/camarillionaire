@@ -7,8 +7,9 @@ import json
 
 load_dotenv()
 
-# t.update_status(
-#     w.get_formated_forecast()
-# )
+#back to og
+t.update_status(
+    w.get_formated_forecast()
+)
 
-v.speak(w.get_formated_forecast())
+# v.speak(w.get_formated_forecast())
