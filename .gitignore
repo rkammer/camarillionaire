@@ -126,3 +126,4 @@ dmypy.json
 
 #custom
 audios/*.mp3
+output.txt
