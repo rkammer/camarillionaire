@@ -12,6 +12,7 @@ def speak(text) :
     tts = gTTS(
         text = text,
         lang="en",
+        # tld="co.uk",
         pre_processor_funcs=[
             pre_processors.tone_marks,
             pre_processors.end_of_line,
@@ -22,4 +23,4 @@ def speak(text) :
 
     filename = "./audios/voice.mp3"
     tts.save(filename)
-    playsound.playsound(filename)
+    # playsound.playsound(filename)
